@@ -26,13 +26,16 @@ function makeGreen (evt) {
 
 // CREATE FUNCTION makeBlue HERE
 function makeBlue (evt) {
+  if (evt.target.classList.contains("green") || (evt.target.classList.contains("invisible")) ) {
+
+  } else {
+    evt.target.classList.toggle('blue')
+  }
   
-  evt.target.classList.toggle('blue')
   updateCounts()
 }
 // CREATE FUNCTION hide HERE
 function hide (evt) {
-  
   evt.target.classList.toggle('invisible')
   updateCounts()
 }
