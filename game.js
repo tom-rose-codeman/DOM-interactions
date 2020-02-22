@@ -20,7 +20,10 @@ function bindEventListeners (dots) {
 
 function makeGreen (evt) {
   evt.preventDefault()
+  if (evt.target.classList.contains("blue") || (evt.target.classList.contains("invisible")) ) {
+  } else {
   evt.target.classList.toggle('green')
+  }
   updateCounts()
 }
 
