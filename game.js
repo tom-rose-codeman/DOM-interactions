@@ -39,6 +39,7 @@ function makeBlue (evt) {
 }
 // CREATE FUNCTION hide HERE
 function hide (evt) {
+  evt.target.classList.remove('green','blue')
   evt.target.classList.toggle('invisible')
   updateCounts()
 }
